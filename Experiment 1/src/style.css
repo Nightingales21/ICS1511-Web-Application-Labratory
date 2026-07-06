@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c31a1a;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+}
+
+.li {    
+
+}
