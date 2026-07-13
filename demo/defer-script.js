@@ -1,0 +1,1 @@
+console.log("⏳ Defer Script: HTML parsing finished completely. Now running safely before DOMContentLoaded.");

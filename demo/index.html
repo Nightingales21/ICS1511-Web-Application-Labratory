@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Loading Attributes Demo</title>
+    <style>
+        body { font-family: system-ui, sans-serif; line-height: 1.6; max-width: 600px; margin: 40px auto; padding: 0 20px; }
+        .box { padding: 15px; margin: 15px 0; border-radius: 8px; color: #fff; }
+        .green { background-color: #2e7d32; }
+        .red { background-color: #c62828; }
+        .blue { background-color: #1565c0; }
+    </style>
+
+    <script>
+        console.log("🏠 1. Internal Script (Head): Executed immediately.");
+    </script>
+    <script async src="async-script.js"></script>
+    <script defer src="defer-script.js"></script>
+</head>
+<body>
+
+    <h1>Script Loading Demo</h1>
+    <div class="box green">
+        <strong>Stage 1: Pre-Blocking Content</strong><br>
+        This HTML is parsed into the DOM instantly. 
+    </div>
+
+    <!-- THE RAW BRUTE-FORCE BLOCKER -->
+    <script src="blocking.js"></script>
+
+    <!-- TRAPPED UNTIL THE LOOP FINISHES -->
+    <div class="box red">
+        <strong>Stage 2: Post-Blocking Content</strong><br>
+        This doesn't even exist in the DOM until the 10-second loop is done.
+    </div>
+
+    <button onclick="console.log('💥 Inline Event Handler: Button clicked!')">
+        Test Inline Click Script
+    </button>
+
+    <div class="box blue">
+        <strong>Stage 3: End of Document Content</strong><br>
+        Reached the bottom.
+    </div>
+
+    <script src="bottom-script.js"></script>
+
+</body>
+</html>
