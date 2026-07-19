@@ -1,0 +1,1 @@
+console.log("👇 Bottom Script: Executing at the end of the <body>. The DOM is fully available to me.");
