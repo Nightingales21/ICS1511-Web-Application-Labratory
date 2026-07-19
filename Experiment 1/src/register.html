@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="index-header">
+        <nav class="navabar">
+            <div class="nav-logo"><img src="logo.png" alt=""></div>
+            <div class="nav-quicklinks">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="technical.html">Technical Events</a></li>
+                    <li><a href="nontechnical.html">Non-Technical Events</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-main">
+            <center><h1>Registration</h1></center>
+            <p style="margin-top:12px; color:#cbdaf0;">Fill in the form below to register for TechNova events. Fields marked with * are required.</p>
+
+            <form class="register-form" method="post" action="#">
+                <h2 style="color:#5effde; margin-bottom:10px;">Personal Information</h2>
+                <div class="form-group">
+                    <label for="fullname">Full Name *</label>
+                    <input id="fullname" name="fullname" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="college">College Name *</label>
+                    <input id="college" name="college" type="text" required>
+                </div>
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <input id="department" name="department" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="year">Year of Study</label>
+                    <select id="year" name="year">
+                        <option>1st Year</option>
+                        <option>2nd Year</option>
+                        <option>3rd Year</option>
+                        <option>4th Year</option>
+                    </select>
+                </div>
+
+                <h2 style="color:#5effde; margin:12px 0 8px;">Contact Information</h2>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input id="email" name="email" type="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" name="phone" type="tel">
+                </div>
+
+                <h2 style="color:#5effde; margin:12px 0 8px;">Event Selection</h2>
+                <div class="form-group">
+                    <label for="tech-event">Choose Technical Event</label>
+                    <select id="tech-event" name="tech-event">
+                        <option>Paper Presentation</option>
+                        <option>Web Design Contest</option>
+                        <option>Coding Challenge</option>
+                        <option>Project Expo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nontech-event">Choose Non-Technical Event</label>
+                    <select id="nontech-event" name="nontech-event">
+                        <option>Photography</option>
+                        <option>Quiz Competition</option>
+                        <option>Treasure Hunt</option>
+                        <option>Gaming Tournament</option>
+                    </select>
+                </div>
+
+                <h2 style="color:#5effde; margin:12px 0 8px;">Additional Information</h2>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" name="address" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="comments">Comments</label>
+                    <textarea id="comments" name="comments" rows="3"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-secondary">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="index-footer">
+        <div>
+            <div>
+                <p>&copy; 2026 TechNova Symposium. All Rights Reserved.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="register.html">Register Now</a></li>
+                    <li><a href="contact.html">Contact Support</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <a href="https://instagram.com" target="_blank" class="social-link">Instagram</a>
+                <a href="https://linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+                <a href="https://youtube.com" target="_blank" class="social-link">YouTube</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
